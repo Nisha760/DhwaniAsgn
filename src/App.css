@@ -8,7 +8,6 @@ html, body, #root{
 
 .container{
   height: 100%;
-  /* background-color: teal; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,8 +15,8 @@ html, body, #root{
 }
 
 .card-input{
-  width: 50%;
-  /* background-color: pink; */
+  background-color: rgb(248, 248, 248);
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,10 +24,8 @@ html, body, #root{
 
 
 .input-wrapper{
-  background-color: rgb(245, 243, 243);
-  
+  background-color: rgb(245, 243, 243); 
   border: 0.5px solid rgb(219, 219, 219);;
-  /* width: 100%; */
   padding: 15px;
   border-radius: 5px;
 }
@@ -47,12 +44,6 @@ html, body, #root{
 .input-wrapper>input:focus{
   outline: 2px solid rgb(12, 165, 216);
 }
-
-/* .button{
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-} */
 
 button{
   margin: 25px 0;
@@ -92,9 +83,46 @@ button:hover{
 .list>.card>div{
   margin-left: 30px;
   display: inline-block;
-  color: rgb(124, 7, 7);
+  color: rgb(163, 4, 4);
   position: relative;
   top: 2px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.exist,
+.valid{
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.exist{
+  border: 1px solid rgb(255, 196, 0);
+  background-color: rgb(252, 244, 203);
+  color: rgb(255, 174, 0);
+}
+
+.valid{
+  border: 1px solid rgb(163, 4, 4);
+  background-color: rgb(252, 172, 172);
+  color: rgb(163, 4, 4);
+}
+
+
+@media screen and (max-width: 900px){
+  .input-wrapper>input{
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .input-wrapper>input{
+    height: 30px;
+    width: 45px;
+    font-size: 14px;
+  }
 }

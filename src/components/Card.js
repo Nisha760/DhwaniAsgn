@@ -6,6 +6,7 @@ import { cardContext } from '../context/cardContext'
 function Card({ value }) {
     const { setCardList } = useContext(cardContext);
     const handleDelete = () => {
+        // for deleting the selected card 
         setCardList(prev => {
             let curr = [...prev];
             let index = curr.indexOf(value);

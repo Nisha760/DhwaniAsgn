@@ -6,9 +6,7 @@ import Card from './Card';
 
 function CardList() {
     const {cardList} = useContext(cardContext) ;
-    useEffect(()=>{
-        console.log(cardList) ;
-    }, [cardList])
+    
   return (
     <div className='card-list'>
         <h3>Your Cards</h3>
